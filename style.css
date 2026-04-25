@@ -1,0 +1,115 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #3852B4, #EAF0FF); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #3852B4;
+}
+
+/* Container */
+.container {
+    background: linear-gradient(135deg, #3852B4, #5E7AC4); 
+    padding: 30px 25px;
+    border-radius: 18px;
+    width: 340px;
+    box-shadow: 0 15px 40px rgba(56, 82, 180, 0.25);
+}
+
+/* Judul */
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #FFFFFF; 
+}
+
+h3 {
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #EAF0FF; 
+}
+
+/* Input & Select */
+select,
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: #FFFFFF; 
+    color: #3852B4;
+    transition: 0.25s;
+}
+
+/* Placeholder */
+input::placeholder {
+    color: #9CA3AF; 
+}
+
+/* Fokus input */
+select:focus,
+input:focus {
+    box-shadow: 0 0 0 2px #E3B376;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #E88935, #E3B376); 
+    border: none;
+    border-radius: 12px;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover button */
+button:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #d97706, #E88935);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Hasil */
+.hasil {
+    margin-top: 20px;
+    padding: 14px;
+    background: rgba(255, 255, 255, 0.2); 
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.6;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #FFFFFF;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
